@@ -8,17 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = CardGroupsViewModel()
+    @State private var showErrorAlert = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            Group {
+                if viewModel.isLoading {
+                    ProgressView("Loading...")
+                } else if viewModel.error != nil {
+                    Text("Error")
+                        .foregroundColor(.red)
+                    Text(viewModel.error?.localizedDescription ?? "Unknown error")
+                        .foregroundColor(.red)
+                        .onAppear {
+                            showErrorAlert = true
+                        }
+                        .alert(isPresented: $showErrorAlert) {
+                            Alert(title: Text("Error"), message: Text(viewModel.error?.localizedDescription ?? "Unknown error"))
+                        }
+                } else {
+                    List {
+                        ForEach(viewModel.cardGroups) { cardGroup in
+                            CardGroupView(cardGroup: cardGroup)
+                                .listRowInsets(EdgeInsets())
+                        }
+                    }
+                    .onAppear {
+                        viewModel.fetchData()
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}

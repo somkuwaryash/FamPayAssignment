@@ -11,6 +11,16 @@
 		E3CB22402B6E3FB000694B7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB223F2B6E3FB000694B7D /* ContentView.swift */; };
 		E3CB22422B6E3FB800694B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CB22412B6E3FB800694B7D /* Assets.xcassets */; };
 		E3CB22452B6E3FB800694B7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CB22442B6E3FB800694B7D /* Preview Assets.xcassets */; };
+		E3CB22522B6E741C00694B7D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22512B6E741C00694B7D /* Model.swift */; };
+		E3CB22542B6E752500694B7D /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22532B6E752500694B7D /* CardViewModel.swift */; };
+		E3CB22582B6EA4CE00694B7D /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22572B6EA4CE00694B7D /* CardGroupView.swift */; };
+		E3CB225B2B6EA4F100694B7D /* SmallDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB225A2B6EA4F100694B7D /* SmallDisplayCardView.swift */; };
+		E3CB225D2B6EA53000694B7D /* BigDisplayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB225C2B6EA53000694B7D /* BigDisplayCardView.swift */; };
+		E3CB225F2B6EA57900694B7D /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB225E2B6EA57900694B7D /* ImageCardView.swift */; };
+		E3CB22612B6EA5B000694B7D /* SmallCardWithArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22602B6EA5B000694B7D /* SmallCardWithArrowView.swift */; };
+		E3CB22632B6EA5E100694B7D /* DynamicWidthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22622B6EA5E100694B7D /* DynamicWidthCardView.swift */; };
+		E3CB22652B6EE19B00694B7D /* HandleDeepLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB22642B6EE19B00694B7D /* HandleDeepLinks.swift */; };
+		E3CB22672B6EEB0F00694B7D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E3CB22662B6EEB0F00694B7D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		E3CB223F2B6E3FB000694B7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E3CB22412B6E3FB800694B7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3CB22442B6E3FB800694B7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3CB22512B6E741C00694B7D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E3CB22532B6E752500694B7D /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		E3CB22572B6EA4CE00694B7D /* CardGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupView.swift; sourceTree = "<group>"; };
+		E3CB225A2B6EA4F100694B7D /* SmallDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallDisplayCardView.swift; sourceTree = "<group>"; };
+		E3CB225C2B6EA53000694B7D /* BigDisplayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDisplayCardView.swift; sourceTree = "<group>"; };
+		E3CB225E2B6EA57900694B7D /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
+		E3CB22602B6EA5B000694B7D /* SmallCardWithArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCardWithArrowView.swift; sourceTree = "<group>"; };
+		E3CB22622B6EA5E100694B7D /* DynamicWidthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicWidthCardView.swift; sourceTree = "<group>"; };
+		E3CB22642B6EE19B00694B7D /* HandleDeepLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandleDeepLinks.swift; sourceTree = "<group>"; };
+		E3CB22662B6EEB0F00694B7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +72,13 @@
 			isa = PBXGroup;
 			children = (
 				E3CB223D2B6E3FB000694B7D /* AssignmentFamPayApp.swift */,
+				E3CB22642B6EE19B00694B7D /* HandleDeepLinks.swift */,
 				E3CB223F2B6E3FB000694B7D /* ContentView.swift */,
+				E3CB22572B6EA4CE00694B7D /* CardGroupView.swift */,
+				E3CB22512B6E741C00694B7D /* Model.swift */,
+				E3CB22592B6EA4D700694B7D /* ReusableComponents */,
+				E3CB22532B6E752500694B7D /* CardViewModel.swift */,
+				E3CB22662B6EEB0F00694B7D /* README.md */,
 				E3CB22412B6E3FB800694B7D /* Assets.xcassets */,
 				E3CB22432B6E3FB800694B7D /* Preview Content */,
 			);
@@ -65,6 +91,18 @@
 				E3CB22442B6E3FB800694B7D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3CB22592B6EA4D700694B7D /* ReusableComponents */ = {
+			isa = PBXGroup;
+			children = (
+				E3CB225A2B6EA4F100694B7D /* SmallDisplayCardView.swift */,
+				E3CB225C2B6EA53000694B7D /* BigDisplayCardView.swift */,
+				E3CB225E2B6EA57900694B7D /* ImageCardView.swift */,
+				E3CB22602B6EA5B000694B7D /* SmallCardWithArrowView.swift */,
+				E3CB22622B6EA5E100694B7D /* DynamicWidthCardView.swift */,
+			);
+			path = ReusableComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3CB22452B6E3FB800694B7D /* Preview Assets.xcassets in Resources */,
+				E3CB22672B6EEB0F00694B7D /* README.md in Resources */,
 				E3CB22422B6E3FB800694B7D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +176,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CB22542B6E752500694B7D /* CardViewModel.swift in Sources */,
+				E3CB22582B6EA4CE00694B7D /* CardGroupView.swift in Sources */,
+				E3CB225D2B6EA53000694B7D /* BigDisplayCardView.swift in Sources */,
+				E3CB22522B6E741C00694B7D /* Model.swift in Sources */,
+				E3CB22612B6EA5B000694B7D /* SmallCardWithArrowView.swift in Sources */,
+				E3CB225B2B6EA4F100694B7D /* SmallDisplayCardView.swift in Sources */,
+				E3CB22652B6EE19B00694B7D /* HandleDeepLinks.swift in Sources */,
 				E3CB22402B6E3FB000694B7D /* ContentView.swift in Sources */,
+				E3CB22632B6EA5E100694B7D /* DynamicWidthCardView.swift in Sources */,
+				E3CB225F2B6EA57900694B7D /* ImageCardView.swift in Sources */,
 				E3CB223E2B6E3FB000694B7D /* AssignmentFamPayApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
